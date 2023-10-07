@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="321.0" prefWidth="444.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tringraph.HelloController">
+   <children>
+   
+        <Label fx:id="welcomeText" layoutX="169.0" layoutY="49.0" prefHeight="17.0" prefWidth="13.0" text="a" />
+      <TextField fx:id="sideB" layoutX="196.0" layoutY="194.0" prefHeight="45.0" prefWidth="66.0" style="-fx-border-color: red;" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="182.0" AnchorPane.topAnchor="194.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="sideC" layoutX="188.0" layoutY="194.0" prefHeight="45.0" prefWidth="66.0" style="-fx-border-color: red;" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="194.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="sideA" layoutX="34.0" layoutY="194.0" prefHeight="45.0" prefWidth="66.0" style="-fx-border-color: red;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="welcomeText1" layoutX="259.0" layoutY="48.0" prefHeight="17.0" prefWidth="52.0" text="b" />
+      <Label fx:id="welcomeText11" layoutX="216.0" layoutY="113.0" prefHeight="17.0" prefWidth="52.0" text="d" />
+      <Line endX="-5.0" layoutX="274.0" layoutY="102.5" startX="-100.0" />
+      <Line endX="-12.0" endY="-133.0" layoutX="232.0" layoutY="150.7071075439453" startX="-58.0" startY="-49.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </Line>
+      <Line endX="-37.5" endY="-13.0" layoutX="307.0" layoutY="114.41421508789062" startX="-86.29290771484375" startY="-97.70710754394531" />
+      <Label layoutX="43.0" layoutY="169.0" prefHeight="17.0" prefWidth="47.0" text="side a" />
+      <Label layoutX="211.0" layoutY="169.0" prefHeight="17.0" prefWidth="41.0" text="side b" />
+      <Label layoutX="363.0" layoutY="169.0" prefHeight="17.0" prefWidth="41.0" text="side d" />
+      <Label layoutX="105.0" layoutY="144.0" prefHeight="17.0" prefWidth="256.0" text="ВВЕДИТЕ ДЛИНЫ СТОРОН ТРЕУГОЛЬНИКА:" />
+      <Button layoutX="129.0" layoutY="251.0" mnemonicParsing="false" onAction="#onClickTrinArea" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: yellow;" text="рассчитать площадь" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="251.0">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="resArea" layoutX="218.0" layoutY="290.0" text="0" />
+   </children>
+</AnchorPane>
